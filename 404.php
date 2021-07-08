@@ -49,6 +49,7 @@
 			<h2>We kunnen deze pagina niet vinden! Is hij misschien naar beneden gevallen?</h2>
 		</div>
 	</div>
+	<?php
 #app
   .menu(v-if="displayStep === displaySteps.top")
     .label ZOMBIE GUN WAR
@@ -184,7 +185,7 @@
         d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"
         v-if="play === false"
       )
-
+>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
