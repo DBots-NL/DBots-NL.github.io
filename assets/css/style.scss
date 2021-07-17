@@ -8,9 +8,77 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+$color-light: #fff;
+$color-dark: #333;
+$color-grey: #c4c4c4;
+$color-green: #59ac40;
+
+$transition-time: 0.3s;
+
+:root {
+  --theme-bg-color: var(#{$color-light});
+  --theme-text-color: var(#{$color-dark});
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
-  color: #212529;
+  background: var(--theme-bg-color);
+  color: var(--theme-text-color);
+  margin: 20px;
+  transition: background $transition-time, color $transition-time;
+  &[data-theme="dark"] {
+    --theme-bg-color: #{$color-dark};
+    --theme-text-color: #{$color-light};
+  }
+}
+.switch {
+  background: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  position: relative;
+  width: 80px;
+}
+.switch__toggle {
+  background: $color-dark;
+  border-radius: 20px;
+  display: block;
+  height: 100%;
+  transition: background $transition-time;
+  &::after {
+    background: $color-light;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 34px;
+    left: 0;
+    margin: 3px;
+    position: absolute;
+    top: 0;
+    transition: transform $transition-time, background $transition-time;
+    width: 34px;
+  }
+}
+.switch__state {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  &:focus ~ .switch__toggle {
+    box-shadow: 0 0 2px 3px rgba(0, 160, 204, 0.8);
+  }
+  &:checked ~ .switch__toggle {
+    background: $color-light;
+    &::after {
+      background: $color-dark;
+      transform: translate(calc(80px - 40px));
+    }
+  }
+}
+.container {
+  margin: 0 auto 30px;
+  max-width: 800px;
 }
 
 a {
