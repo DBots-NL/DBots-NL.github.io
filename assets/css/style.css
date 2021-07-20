@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 3px;
   transition: 0.5s;
   margin: 10px;
-  color: #333;
+  color: #fff;
   background: #5865f2;
 }
 
@@ -456,7 +456,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fef8f5;
+  background-color: #333;
 }
 
 .section-title {
@@ -498,7 +498,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #fef5f1;
+  background-color: #333;
   min-height: 40px;
 }
 
@@ -523,7 +523,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #6c757d;
+  color: #fff;
   content: "/";
 }
 
@@ -545,14 +545,14 @@ section {
 .about h3 {
   font-weight: 700;
   font-size: 34px;
-  color: #4e4039;
+  color: #fff;
 }
 
 .about h4 {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
-  color: #7a6960;
+  color: #fff;
 }
 
 .about i {
