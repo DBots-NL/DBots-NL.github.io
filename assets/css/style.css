@@ -1335,7 +1335,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #5c5c5c;
+  color: #fff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1350,7 +1350,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #5865f2;
-  color: #333;
+  color: #fff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1376,7 +1376,7 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
-  color: #212529;
+  color: #fff;
 }
 
 #footer .credits a {
