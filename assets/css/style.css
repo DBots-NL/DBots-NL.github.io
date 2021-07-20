@@ -481,7 +481,7 @@ section {
   position: relative;
   font-size: 32px;
   font-weight: 700;
-  color: #4e4039;
+  color: #fff;
 }
 
 .section-title p::after {
