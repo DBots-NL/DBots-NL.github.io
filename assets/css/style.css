@@ -1296,7 +1296,7 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #5c5c5c;
+  color: #fff;
 }
 
 #footer .footer-top h4 {
@@ -1363,7 +1363,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: #414edc;
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 
