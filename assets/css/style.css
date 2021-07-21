@@ -979,6 +979,7 @@ section {
   background: linear-gradient(0deg, rgba(88, 101, 242, 0.95) 0%, rgba(133, 142, 246, 0.95) 15%, rgba(51, 51, 51, 0) 100%);
   opacity: 1;
   transition: 0.4s;
+  border-radius: 50%;
 }
 
 .team .member:hover .member-info-content {
